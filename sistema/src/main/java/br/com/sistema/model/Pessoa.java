@@ -11,5 +11,6 @@ public abstract class Pessoa {
 	public void setCodigo(long codigo) {
 		this.codigo = codigo;
 	}
+	//teste
 	
 }
