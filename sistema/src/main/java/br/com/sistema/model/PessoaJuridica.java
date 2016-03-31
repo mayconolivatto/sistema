@@ -7,7 +7,7 @@ public class PessoaJuridica extends Pessoa {
 	 */
 	private String cnpj;
 	private String razaoSocial;
-	private long inscricaoEstadual;
+	private String inscricaoEstadual;
 	
 	
 	/***
@@ -41,12 +41,12 @@ public class PessoaJuridica extends Pessoa {
 	}
 
 
-	public long getInscricaoEstadual() {
+	public String getInscricaoEstadual() {
 		return inscricaoEstadual;
 	}
 
 
-	public void setInscricaoEstadual(long inscricaoEstadual) {
+	public void setInscricaoEstadual(String inscricaoEstadual) {
 		this.inscricaoEstadual = inscricaoEstadual;
 	}
 }

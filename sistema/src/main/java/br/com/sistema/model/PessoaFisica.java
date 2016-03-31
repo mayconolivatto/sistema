@@ -1,5 +1,5 @@
 package br.com.sistema.model;
-import java.util.Date;
+import java.util.Calendar;
 
 public class PessoaFisica extends Pessoa {
 
@@ -12,13 +12,14 @@ public class PessoaFisica extends Pessoa {
 	
 	/***
 	 * atributos específicos utilizados para cadastro de funcionários 
-	 * (atributos "gerais" serão erdados de pessoa)
+	 * (atributos "gerais" serão herdados de pessoa)
 	 */
+	
 	
 	private String cpf;
 	private String rg;
 	private String sexo;
-	private Date dataNascimento;
+	private Calendar dataNascimento;
 	
 	/***
 	 * Getters e setters de PessoaFisica
@@ -43,10 +44,10 @@ public class PessoaFisica extends Pessoa {
 	public void setSexo(String sexo) {
 		this.sexo = sexo;
 	}
-	public Date getDataNascimento() {
+	public Calendar getDataNascimento() {
 		return dataNascimento;
 	}
-	public void setDataNascimento(Date dataNascimento) {
+	public void setDataNascimento(Calendar dataNascimento) {
 		this.dataNascimento = dataNascimento;
 	}
 	

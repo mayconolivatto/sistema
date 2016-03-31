@@ -1,6 +1,7 @@
 package br.com.sistema.model;
 
-import java.sql.Date;
+import java.math.BigDecimal;
+import java.util.Calendar;
 
 public class Funcionario extends Pessoa {
 	
@@ -15,12 +16,13 @@ public class Funcionario extends Pessoa {
 	 * atributos específicos utilizados para cadastro de funcionários 
 	 * (atributos "gerais" serão erdados de pessoa)
 	 */
-	
-	private Date DataAdmissao;
-	private Float Salario;
-	private String CateiraTrabalho; 
+	//pesquisar calendar e bigdecimal
+	private Calendar dataAdmissao;
+	private BigDecimal salario;
+	//criar classe para carteira de trabalho, classe DOCUMENTO
+	private String cateiraTrabalho; 
 	private	String numeroPis;
-	private String numeroSeguro;
+	private String numeroSeguroDeVida;
 	
 	
 	/***
@@ -28,23 +30,23 @@ public class Funcionario extends Pessoa {
 	 * @return
 	 */
 	
-	public Date getDataAdmissao() {
-		return DataAdmissao;
+	public Calendar getDataAdmissao() {
+		return dataAdmissao;
 	}
-	public void setDataAdmissao(Date dataAdmissao) {
-		DataAdmissao = dataAdmissao;
+	public void setDataAdmissao(Calendar dataAdmissao) {
+		this.dataAdmissao = dataAdmissao;
 	}
-	public Float getSalario() {
-		return Salario;
+	public BigDecimal getSalario() {
+		return salario;
 	}
-	public void setSalario(Float salario) {
-		Salario = salario;
+	public void setSalario(BigDecimal salario) {
+		this.salario = salario;
 	}
 	public String getCateiraTrabalho() {
-		return CateiraTrabalho;
+		return cateiraTrabalho;
 	}
 	public void setCateiraTrabalho(String cateiraTrabalho) {
-		CateiraTrabalho = cateiraTrabalho;
+		this.cateiraTrabalho = cateiraTrabalho;
 	}
 	public String getNumeroPis() {
 		return numeroPis;
@@ -52,11 +54,11 @@ public class Funcionario extends Pessoa {
 	public void setNumeroPis(String numeroPis) {
 		this.numeroPis = numeroPis;
 	}
-	public String getNumeroSeguro() {
-		return numeroSeguro;
+	public String getNumeroSegurodeVida() {
+		return numeroSeguroDeVida;
 	}
-	public void setNumeroSeguro(String numeroSeguro) {
-		this.numeroSeguro = numeroSeguro;
+	public void setNumeroSegurodeVida(String numeroSeguroDeVida) {
+		this.numeroSeguroDeVida = numeroSeguroDeVida;
 	}
 	
 	

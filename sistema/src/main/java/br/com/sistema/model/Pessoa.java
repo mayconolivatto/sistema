@@ -1,7 +1,9 @@
 package br.com.sistema.model;
 
 public abstract class Pessoa {
-
+	
+	//TODO - MUDAR A CLASSE DE PACOTE. Criar pacote para classes abstratas.
+	
 	/***
 	 * Construtor aberto, decidir depois como faremos.
 	 */
@@ -14,14 +16,15 @@ public abstract class Pessoa {
 	 * fisica e pessoa jurídica.
 	 * 
 	 */
-	private long codigo;
+	private Long codigo;
 	private String nome;
 	private String email;
 	private String telefone;
+	//separar classes para endereço.
 	private String logradouro;
-	private int numero;
+	private String numero;
 	private String bairro;
-	private int cep;
+	private String cep;
 	private String cidade;
 	private String estado;
 	private String complemento;
@@ -62,11 +65,11 @@ public abstract class Pessoa {
 		this.logradouro = logradouro;
 	}
 
-	public int getNumero() {
+	public String getNumero() {
 		return numero;
 	}
 
-	public void setNumero(int numero) {
+	public void setNumero(String numero) {
 		this.numero = numero;
 	}
 
@@ -78,11 +81,11 @@ public abstract class Pessoa {
 		this.bairro = bairro;
 	}
 
-	public int getCep() {
+	public String getCep() {
 		return cep;
 	}
 
-	public void setCep(int cep) {
+	public void setCep(String cep) {
 		this.cep = cep;
 	}
 

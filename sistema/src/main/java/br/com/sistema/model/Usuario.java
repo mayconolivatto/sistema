@@ -6,9 +6,11 @@ public class Usuario extends Funcionario{
 		 * Atributos de usuario, serão usados para o usuario conseguir fazer login no sistema
 		 * 
 		 */
-		private String usuario;
+		
 		private String senha;
-		private String tipo;
+		
+		//TODO fazer enum de user e adm
+		//private String tipo;
 		
 		/***
 		 * Construtor vazio, decidir posteriormente.
@@ -21,14 +23,7 @@ public class Usuario extends Funcionario{
 		 * Getters e setters de Usuario
 		 * @return
 		 */
-		public String getUsuario() {
-			return usuario;
-		}
-
-		public void setUsuario(String usuario) {
-			this.usuario = usuario;
-		}
-
+		
 		public String getSenha() {
 			return senha;
 		}
@@ -36,15 +31,16 @@ public class Usuario extends Funcionario{
 		public void setSenha(String senha) {
 			this.senha = senha;
 		}
-
-		public String getTipo() {
-			return tipo;
-		}
-
-		public void setTipo(String tipo) {
-			this.tipo = tipo;
-		}
 		
+//TODO - liberar quando enum estiver pronto
+//		public String getTipo() {
+//			return tipo;
+//		}
+//
+//		public void setTipo(String tipo) {
+//			this.tipo = tipo;
+//		}
+//		
 		
 		
 }
