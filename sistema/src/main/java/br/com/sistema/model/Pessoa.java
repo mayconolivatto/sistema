@@ -27,8 +27,7 @@ public abstract class Pessoa {
 	private String complemento;
 
 	/***
-	 * Getters e setters
-	 * 
+	 * Getters e setters de Pessoa
 	 * @return
 	 */
 	public String getNome() {

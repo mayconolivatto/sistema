@@ -1,5 +1,7 @@
 package br.com.sistema.model;
 
+import java.sql.Date;
+
 public class Funcionario extends Pessoa {
 	
 	/***
@@ -14,7 +16,7 @@ public class Funcionario extends Pessoa {
 	 * (atributos "gerais" serão erdados de pessoa)
 	 */
 	
-	private String DataAdmissao;
+	private Date DataAdmissao;
 	private Float Salario;
 	private String CateiraTrabalho; 
 	private	String numeroPis;
@@ -22,13 +24,14 @@ public class Funcionario extends Pessoa {
 	
 	
 	/***
-	 * geração de geters and seters
+	 * Getters e setters de Funcionário
+	 * @return
 	 */
 	
-	public String getDataAdmissao() {
+	public Date getDataAdmissao() {
 		return DataAdmissao;
 	}
-	public void setDataAdmissao(String dataAdmissao) {
+	public void setDataAdmissao(Date dataAdmissao) {
 		DataAdmissao = dataAdmissao;
 	}
 	public Float getSalario() {
