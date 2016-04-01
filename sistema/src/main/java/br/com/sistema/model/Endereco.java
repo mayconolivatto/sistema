@@ -9,7 +9,7 @@ public class Endereco {
 	}
 	
 	/**
-	 * Atributos genéricos definios para cadastro de endereços
+	 * Atributos genéricos definidos para cadastro de endereços
 	 */
 	
 	private String logradouro;

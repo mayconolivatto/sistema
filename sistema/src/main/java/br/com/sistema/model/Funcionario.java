@@ -20,7 +20,6 @@ public class Funcionario extends Pessoa {
 	//pesquisar calendar e bigdecimal
 	private Calendar dataAdmissao;
 	private BigDecimal salario;
-	//criar classe para carteira de trabalho, classe DOCUMENTO
 	private String cateiraTrabalho; 
 	private	String numeroPis;
 	private String numeroSeguroDeVida;
