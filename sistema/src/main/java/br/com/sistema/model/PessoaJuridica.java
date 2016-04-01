@@ -1,5 +1,7 @@
 package br.com.sistema.model;
 
+import br.com.sistema.abstrato.Pessoa;
+
 public class PessoaJuridica extends Pessoa {
 
 	/***
@@ -49,4 +51,6 @@ public class PessoaJuridica extends Pessoa {
 	public void setInscricaoEstadual(String inscricaoEstadual) {
 		this.inscricaoEstadual = inscricaoEstadual;
 	}
+	
+	/** Final dos getters e setters **/
 }

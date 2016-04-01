@@ -1,6 +1,8 @@
 package br.com.sistema.model;
 import java.util.Calendar;
 
+import br.com.sistema.abstrato.Pessoa;
+
 public class PessoaFisica extends Pessoa {
 
 	/**
@@ -50,5 +52,7 @@ public class PessoaFisica extends Pessoa {
 	public void setDataNascimento(Calendar dataNascimento) {
 		this.dataNascimento = dataNascimento;
 	}
+	
+	/** Final dos getters e setters **/
 	
 }

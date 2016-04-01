@@ -4,9 +4,7 @@ public class Usuario extends Funcionario{
 
 		/***
 		 * Atributos de usuario, serão usados para o usuario conseguir fazer login no sistema
-		 * 
-		 */
-		
+		 */		
 		private String senha;
 		
 		//TODO fazer enum de user e adm

@@ -3,12 +3,13 @@ package br.com.sistema.model;
 import java.math.BigDecimal;
 import java.util.Calendar;
 
+import br.com.sistema.abstrato.Pessoa;
+
 public class Funcionario extends Pessoa {
 	
 	/***
 	 * Construtor vazio, realizar definição posteriormente. 
-	 */
-	
+	 */	
 	public Funcionario(){
 	}
 
@@ -61,5 +62,5 @@ public class Funcionario extends Pessoa {
 		this.numeroSeguroDeVida = numeroSeguroDeVida;
 	}
 	
-	
+	/** Final dos getters e setters **/
 }
