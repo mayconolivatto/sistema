@@ -1,5 +1,7 @@
 package br.com.sistema.abstrato;
 
+import br.com.sistema.model.Endereco;
+
 public abstract class Pessoa {
 	
 	/***
@@ -12,7 +14,7 @@ public abstract class Pessoa {
 	private String telefoneResidencial;
 	private String telefoneCelular;
 	private String telefoneComercial;
-	
+	private Endereco endereco;
 	/***
 	 * Getters e setters
 	 * @return
@@ -64,6 +66,14 @@ public abstract class Pessoa {
 
 	public void setTelefoneComercial(String telefoneComercial) {
 		this.telefoneComercial = telefoneComercial;
+	}
+
+	public Endereco getEndereco() {
+		return endereco;
+	}
+
+	public void setEndereco(Endereco endereco) {
+		this.endereco = endereco;
 	}
 	
 	/** Final dos getters e setters **/
