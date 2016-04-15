@@ -8,7 +8,7 @@ public abstract class Pessoa {
 	 * Atributos genériocos  que serão passados para as classes de funcionario, pessoa
 	 * fisica e pessoa jurídica.
 	 */
-	private Long codigo;
+	private Long codigo; //sequencial gerado automaticamente.
 	private String nome;
 	private String email;
 	private String telefoneResidencial;
